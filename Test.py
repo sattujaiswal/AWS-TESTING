@@ -1,0 +1,5 @@
+print("satya")
+print("satya")
+print("satya")
+print("satya")
+print("satya")
