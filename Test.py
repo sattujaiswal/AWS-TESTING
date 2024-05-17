@@ -10,3 +10,4 @@ print("satya")
 
 def abc():
     print("its a function")
+    print("its a new function")
