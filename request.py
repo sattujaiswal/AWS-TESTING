@@ -1,10 +1,15 @@
 import requests
 
-# Correct URL with the port number separated from the path
-url = "http://ec2-44-211-207-10.compute-1.amazonaws.com:8000/fibonacci/10"
+# URL of your FastAPI endpoint
+url = "http://ec2-54-236-228-83.compute-1.amazonaws.com:8000/"
 
 # Send GET request
 response = requests.get(url)
 
-# Print the response text
-print(response.text)
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+    # Print the response content (the numbers from 1 to 10)
+    print(response.text)
+else:
+    # Print an error message if the request was not successful
+    print("Error:", response.status_code)
