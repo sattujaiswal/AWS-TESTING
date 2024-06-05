@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
 import time
+import multiprocessing
 
 app = FastAPI()
 
@@ -18,6 +19,30 @@ def compute():
         pass
     return {"message": "Completed CPU-intensive task"}
     
+
+def cpu_load():
+    while True:
+        pass
+
+@app.get("/test-cpu-utilization/")
+def test_cpu_utilization():
+    num_processes = multiprocessing.cpu_count()
+    target_utilization = 0.25  # Target CPU utilization (25%)
+    processes = []
+
+    for _ in range(num_processes):
+        process = multiprocessing.Process(target=cpu_load)
+        processes.append(process)
+        process.start()
+
+    # Monitor CPU utilization until target is reached
+    while True:
+        total_utilization = sum(p.cpu_percent() / 100 for p in processes)
+        if total_utilization >= target_utilization * num_processes:
+            break
+        time.sleep(1)
+
+    return {"message": "CPU utilization test completed"}    
 
 @app.get("/{name}/")  # Corrected route path
 def print_numbers(name):

@@ -1,7 +1,7 @@
 import requests
 
 # URL of your FastAPI endpoint
-url = "http://ec2-54-236-228-83.compute-1.amazonaws.com:8000/"
+url = "http://ec2-54-167-32-133.compute-1.amazonaws.com:8000/"
 
 # Send GET request
 response = requests.get(url)
