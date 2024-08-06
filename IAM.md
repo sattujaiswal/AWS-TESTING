@@ -208,34 +208,34 @@ Basic Concepts
 	5.	What are the main components of IAM?
 
 Policies and Permissions
-6. What are IAM policies?
-7. What is the difference between managed policies and inline policies?
-8. How do you attach a policy to a user, group, or role?
-9. What is a policy simulator and how is it used?
-10. How can you grant least privilege to users?
+    6. What are IAM policies?
+    7. What is the difference between managed policies and inline policies?
+    8. How do you attach a policy to a user, group, or role?
+    9. What is a policy simulator and how is it used?
+    10. How can you grant least privilege to users?
 
 Advanced IAM Features
-11. How do IAM roles work with EC2 instances?
-12. What is a trust policy in IAM roles?
-13. How do you manage permissions for a large number of users in AWS?
-14. What is the IAM policy evaluation logic?
-15. How can you grant cross-account access using IAM roles?
+    11. How do IAM roles work with EC2 instances?
+    12. What is a trust policy in IAM roles?
+    13. How do you manage permissions for a large number of users in AWS?
+    14. What is the IAM policy evaluation logic?
+    15. How can you grant cross-account access using IAM roles?
 
 Best Practices and Security
-16. What are some IAM best practices?
-17. Why is it important to use MFA (Multi-Factor Authentication) for IAM users?
-18. How do you securely manage access keys for IAM users?
-19. What is an IAM Access Analyzer and how does it help in securing your AWS environment?
-20. How can you audit IAM roles and permissions?
+    16. What are some IAM best practices?
+    17. Why is it important to use MFA (Multi-Factor Authentication) for IAM users?
+    18. How do you securely manage access keys for IAM users?
+    19. What is an IAM Access Analyzer and how does it help in securing your AWS environment?
+    20. How can you audit IAM roles and permissions?
 
 Scenario-Based Questions
-21. How would you grant temporary access to AWS resources for an external user?
-22. Describe the process to create and manage IAM roles for an application running on EC2 instances.
-23. A developer needs read-only access to a specific S3 bucket. How would you set this up?
-24. How can you ensure that an IAM user can only access resources in a specific region?
-25. You have a development team that needs different levels of access to various AWS services. How would you organize users, groups, and roles to manage their permissions effectively?
-26. How do you handle a situation where an IAM user needs to assume multiple roles?
-27. Describe a scenario where you would use an IAM policy with a condition key.
-28. How can you enable a Lambda function to access a DynamoDB table using IAM roles?
-29. What steps would you take if an IAM user’s access key is compromised?
-30. How can you use IAM roles to allow an application running on an ECS cluster to access other AWS services?
+    21. How would you grant temporary access to AWS resources for an external user?
+    22. Describe the process to create and manage IAM roles for an application running on EC2 instances.
+    23. A developer needs read-only access to a specific S3 bucket. How would you set this up?
+    24. How can you ensure that an IAM user can only access resources in a specific region?
+    25. You have a development team that needs different levels of access to various AWS services. How would you organize users, groups, and roles to manage their permissions effectively?
+    26. How do you handle a situation where an IAM user needs to assume multiple roles?
+    27. Describe a scenario where you would use an IAM policy with a condition key.
+    28. How can you enable a Lambda function to access a DynamoDB table using IAM roles?
+    29. What steps would you take if an IAM user’s access key is compromised?
+    30. How can you use IAM roles to allow an application running on an ECS cluster to access other AWS services?
