@@ -97,26 +97,23 @@ Question: How can you ensure that an IAM user can only access resources in a spe
 Answer:
 
 	•	Create a policy with a condition that restricts access based on the aws:RequestedRegion key:
-    {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "*",
-      "Resource": "*",
-      "Condition": {
-        "StringEquals": {
-          "aws:RequestedRegion": "us-west-2"
-        }
-      }
-    }
-  ]
-}
+            {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                    "Effect": "Allow",
+                    "Action": "*",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                        "aws:RequestedRegion": "us-west-2"
+                        }
+                        }
+                    }
+                             ]
+             }
 
-
-
-
-	•	Attach this policy to the IAM user or group.
+    	Attach this policy to the IAM user or group.
 
 Scenario 5: Organizing Permissions for a Development Team
 
@@ -143,21 +140,21 @@ Answer:
 
 	•	Use a condition key to restrict access based on factors such as IP address, time of day, or specific AWS services.
 	•	Example: Restricting access to a specific IP range:
-    {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "*",
-      "Resource": "*",
-      "Condition": {
-        "IpAddress": {
-          "aws:SourceIp": "203.0.113.0/24"
-        }
-      }
-    }
-  ]
-}
+             {
+                 "Version": "2012-10-17",
+                 "Statement": [
+                {
+                "Effect": "Allow",
+                "Action": "*",
+                "Resource": "*",
+                "Condition": {
+                    "IpAddress": {
+                    "aws:SourceIp": "203.0.113.0/24"
+                    }
+                }
+                }
+              ]
+            }
 
 Scenario 8: Lambda Function Accessing DynamoDB
 
